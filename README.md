@@ -1,2 +1,2 @@
 # apache-passphrase
-A natural language processing language model for computers
+A natural language processing model for computers
