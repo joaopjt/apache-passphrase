@@ -86,20 +86,22 @@ program.command('parse')
         return null;
       }
 
-      if (letter === undefined) {
+      if (letter === ' ') {
         result += '-'
+        lastLetter = null;
         return null;
       }
 
       for (let i = 0; i < protons; i++) {
         console.log(`index: ${ll}`);
         console.log(`letter: ${ll}`);
+
         l = alphabet[ll][l];
         ll = nato[l];
       }
 
       // next
-      result += letter;
+      result += l;
       lastLetter = letter;
 
       return null;
