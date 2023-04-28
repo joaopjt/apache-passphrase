@@ -15,14 +15,14 @@
   "n": "KILO",
   "o": "FOXTROT",
   "p": "LIMA",
-  "q": "QUEBEC",
-  "r": "KILO",
-  "s": "SIERRA",
-  "t": "TANGO",
+  "q": "UNIFORM",
+  "r": "MIKE",
+  "s": "KILO",
+  "t": "CHARLIE",
   "u": "KILO",
-  "v": "FOXTROT",
-  "w": "WHISKEY",
-  "x": "HOTEL",
-  "y": "YANKEE",
-  "z": "ALPHA"
+  "v": "TANGO",
+  "w": "FOXTROT",
+  "x": "ROMEO",
+  "y": "ALPHA",
+  "z": "YANKEE"
 }
