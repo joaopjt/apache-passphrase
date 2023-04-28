@@ -31,7 +31,6 @@ const alphabet = {
   "z": require('./alphabet/zulu.json')
 };
 
-
 const nato = {
   "ALPHA": 'a',
   "BETA": 'b',
@@ -94,7 +93,7 @@ program.command('parse')
       }
 
       for (let i = 0; i < protons; i++) {
-        l = alphabet[ll][letter];
+        l = alphabet[ll][l];
         ll = nato[l];
       }
 
