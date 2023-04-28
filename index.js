@@ -75,10 +75,11 @@ program.command('parse')
     let lastLetter = null;
 
     Object.values(String(word)).forEach((letter) => {
-      protons = protons || 1;
-      letter = letter.toLowerCase();
-      l = letter;
+      l = letter.toLowerCase();
       ll = lastLetter;
+
+      protons = protons || 1;
+      letter = l;
 
       if (lastLetter === null) {
         lastLetter = letter;
@@ -93,10 +94,7 @@ program.command('parse')
       }
 
       for (let i = 0; i < protons; i++) {
-        console.log(`index: ${ll}`);
-        console.log(`letter: ${ll}`);
-
-        l = alphabet[ll][l];
+        l = alphabet[ll][letter];
         ll = nato[l];
       }
 
@@ -106,8 +104,9 @@ program.command('parse')
 
       return null;
     });
-
+  
     console.log(result);
   });
+
 
 program.parse();
