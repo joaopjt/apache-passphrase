@@ -1,0 +1,25 @@
+{
+  "name": "gesprach",
+  "version": "1.0.0",
+  "description": "A natural language processing model for computers",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopjt/gesprach.git"
+  },
+  "keywords": [
+    "gesprach"
+  ],
+  "author": "João Pedro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaopjt/gesprach/issues"
+  },
+  "homepage": "https://github.com/joaopjt/gesprach#readme",
+  "dependencies": {
+    "commander": "^10.0.1"
+  }
+}
