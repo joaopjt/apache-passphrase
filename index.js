@@ -79,12 +79,15 @@ program.command('parse')
       if (lastLetter === null) {
         lastLetter = letter;
         result += alphabet['x'][letter];
+
+        if (debug) console.log(`${letter.toUpperCase()}: ${alphabet['x'][letter]}`);
         return null;
       }
 
       if (letter === ' ' || letter === '-') {
         result += ' - ';
         lastLetter = null;
+        if (debug) console.log(`------------`);
         return null;
       }
 
