@@ -82,8 +82,8 @@ program.command('parse')
         return null;
       }
 
-      if (letter === ' ') {
-        result += '-';
+      if (letter === ' ' || letter === '-') {
+        result += ' - ';
         lastLetter = null;
         return null;
       }
@@ -91,7 +91,7 @@ program.command('parse')
       if (debug) console.log(`${lastLetter.toUpperCase()}${letter.toUpperCase()}: ${alphabet[lastLetter][letter]}`);
 
       // next
-      result += alphabet[lastLetter][letter];
+      result += ' ' + alphabet[lastLetter][letter];
       lastLetter = letter;
 
       return null;
