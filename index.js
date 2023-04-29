@@ -67,18 +67,14 @@ program
 
 program.command('parse')
   .description('Parse a string into substrings and display as an array')
-  .argument('<string>', 'string to split')
-  .option('-p, --protons <number>', 'protons')
-  .action((word, { protons }) => {
+  .argument('<string>', 'string to parse')
+  .option('-d, --debug', 'debug')
+  .action((word, { debug }) => {
     let result = '';
     let lastLetter = null;
 
     Object.values(String(word)).forEach((letter) => {
-      l = letter.toLowerCase();
-      ll = lastLetter;
-
-      protons = protons || 1;
-      letter = l;
+      letter = letter.toLowerCase();
 
       if (lastLetter === null) {
         lastLetter = letter;
@@ -87,18 +83,15 @@ program.command('parse')
       }
 
       if (letter === ' ') {
-        result += '-'
+        result += '-';
         lastLetter = null;
         return null;
       }
 
-      for (let i = 0; i < protons; i++) {
-        l = alphabet[ll][l];
-        ll = nato[l];
-      }
+      if (debug) console.log(`${lastLetter.toUpperCase()}${letter.toUpperCase()}: ${alphabet[lastLetter][letter]}`);
 
       // next
-      result += l;
+      result += alphabet[lastLetter][letter];
       lastLetter = letter;
 
       return null;
