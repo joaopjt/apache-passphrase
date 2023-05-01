@@ -60,6 +60,35 @@ const nato = {
   "ZULU": 'z'
 };
 
+const otan = {
+  "a": "ALPHA",
+  "b": "BETA",
+  "c": "CHARLIE",
+  "d": "DELTA",
+  "e": "ECHO",
+  "f": "FOXTROT",
+  "g": "GOLF",
+  "h": "HOTEL",
+  "i": "INDIA",
+  "j": "JULIET",
+  "k": "KILO",
+  "l": "LIMA",
+  "m": "MIKE",
+  "n": "NOVEMBER",
+  "o": "OSCAR",
+  "p": "PAPA",
+  "q": "QUEBEC",
+  "r": "ROMEO",
+  "s": "SIERRA",
+  "t": "TANGO",
+  "u": "UNIFORM",
+  "v": "VICTOR",
+  "w": "WHISKEY",
+  "x": "XRAY",
+  "y": "YANKEE",
+  "z": "ZULU"
+};
+
 program
   .name(name)
   .description('A natural language processing model for computers')
@@ -78,7 +107,7 @@ program.command('parse')
 
       if (lastLetter === null) {
         lastLetter = letter;
-        result += alphabet['x'][letter];
+        result += otan[letter];
 
         if (debug) console.log(`${letter.toUpperCase()}: ${alphabet['x'][letter]}`);
         return null;
