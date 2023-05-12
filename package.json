@@ -1,5 +1,5 @@
 {
-  "name": "gesprach",
+  "name": "panties",
   "version": "1.0.0",
   "description": "A natural language processing model for computers",
   "main": "index.js",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joaopjt/gesprach.git"
+    "url": "git+https://github.com/joaopjt/panties.git"
   },
   "keywords": [
-    "gesprach"
+    "panties"
   ],
   "author": "João Pedro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joaopjt/gesprach/issues"
+    "url": "https://github.com/joaopjt/panties/issues"
   },
-  "homepage": "https://github.com/joaopjt/gesprach#readme",
+  "homepage": "https://github.com/joaopjt/panties#readme",
   "dependencies": {
     "commander": "^10.0.1"
   }
