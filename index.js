@@ -109,7 +109,7 @@ program.command('parse')
         lastLetter = letter;
         result += otan[letter];
 
-        if (debug) console.log(`${letter.toUpperCase()}: ${alphabet['x'][letter]}`);
+        if (debug) console.log(`${letter.toUpperCase()}: ${otan[letter]}`);
         return null;
       }
 
